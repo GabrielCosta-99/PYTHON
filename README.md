@@ -1,2 +1,2 @@
 # PYTHON
-Desenvolvimento da linguagem PYTHON
+Acompanhamento do meu desenvolvimento em PYTHON
