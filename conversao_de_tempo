@@ -1,0 +1,14 @@
+import time # Importando a biblioteca time.
+
+# Função que converte segundos para horas, minutos e segundos, passando como argumento segundos. 
+def conversao(segundos):
+      tempo = time.gmtime(segundos) #Esta linha usa a função time.gmtime() para converter os segundos fornecidos em uma estrutura de tempo representando o tempo UTC
+      horas = tempo.tm_hour #Aqui, extraímos a hora (no formato de 24 horas) da estrutura de tempo e armazenamos na variável horas.
+      minutos = tempo.tm_min #Aqui, extraímos os minutos da estrutura de tempo e armazenamos na variável minutos.
+      segundos = tempo.tm_sec #Aqui, extraímos os segundos da estrutura de tempo e armazenamos na variável segundos.
+      return horas, minutos, segundos #Esta linha retorna uma tupla contendo as horas, minutos e segundos extraídos da estrutura de tempo.
+
+segundos = int(input('Digite o número de segundos: ')) #Solicitando o usuario um numero inteiro de segundos.
+horas, minutos, segundos = conversao(segundos) # chamando a função, com o valor de segundos como argumento e armazenando os valores retornados.
+print(f"{horas:}:{minutos:}:{segundos:}") # imprimindo o resultado.
+# FIM DO CODIGO
